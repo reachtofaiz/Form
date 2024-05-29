@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<link rel="stylesheet" href="./stylesheets/form.css">
+
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Feedback</a>
+        </nav>
+        <div class="menuAndbtn">
+            <img src="./images/menu.svg" onclick="toggleMenu()">
+            <button id="login-btn"><a href="form.html">Login</a></button>
+        </div>
+    </header>
+    <div class="menu-items">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Feedback</a>
+    </div>
+
+    <div class="container">
+        <span class="close"><ion-icon name="close-outline"></ion-icon></span>
+
+        <div class="form">
+
+            <h2 class="login" id="login">Login</h2>
+
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required autocomplete="off">
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required autocomplete="off">
+                    <label>Password</label>
+                </div>
+
+            </form>
+            <div class="remember_me">
+                <input type="checkbox">
+                <label>Remember me</label>
+                <a href="#">Forget Password ?</a>
+                <button type="submit">Login</button>
+                <p>Don't have an account?<a href="registration.html" class="register" id="register-link">Register</a>
+                </p>
+            </div>
+
+            <div id="registration-form" style="display: none;">
+                <h2>Registration Form</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="name" required autocomplete="off">
+                        <label>User name</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required autocomplete="off">
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="call"></ion-icon></span>
+                        <input type="number" required autocomplete="off">
+                        <label>Phone number</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required autocomplete="off">
+                        <label>Password</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footerContainer1">
+            <div class="companyName">logo</div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <a href="#"><img src="./images/contact.svg" alt="">1234567899</a>
+                <a href="#"><img src="./images/mail.svg" alt="">abc@gmail.com</a>
+                <a href="#"><img src="./images/location.svg" alt="">Jharkhand, India</a>
+            </div>
+            <div class="follow">
+                <span></span>
+                <h2>Connect with us</h2></span>
+                <a href="#"><img src="./images/follow_sites/fb.svg" alt="">Motion_Cut</a>
+                <a href="#"><img src="./images/follow_sites/insta.svg" alt="">Motion_Cut</a>
+                <a href="#"><img src="./images/follow_sites/x.svg" alt="">Motion_Cut</a>
+            </div>
+        </div>
+
+        <div class="footerContainer1">
+            <div class="link">
+                <h3>Important links</h3>
+                <li><a href="#">Committee</a></li>
+                <li><a href="#">User login</a></li>
+                <li><a href="#">Pricing feedback</a></li>
+                <li><a href="#">Members</a></li>
+                <li><a href="#">About payment</a></li>
+            </div>
+        </div>
+        <div class="footerContainer1">
+            <div class="link">
+                <h3>Our Cells and Committee</h3>
+                <li><a href="#">Grievance Redressal Committee</a></li>
+                <li><a href="#">Industry Committee</a></li>
+                <li><a href="#">Internal Complaints Committee</a></li>
+                <li><a href="#">Internal Quality Cell</a></li>
+                <li><a href="#">Overall Events Activities</a></li>
+                <li><a href="#">Online Grievance Redressal Form</a></li>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="./javascripts/form.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
